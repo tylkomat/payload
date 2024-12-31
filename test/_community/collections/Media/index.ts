@@ -30,4 +30,15 @@ export const MediaCollection: CollectionConfig = {
       },
     ],
   },
+  admin: {
+    components: {
+      edit: {
+        Upload: {
+          path: '/components/Upload.tsx',
+          clientProps: {},
+          serverProps: {},
+        },
+      },
+    },
+  },
 }
