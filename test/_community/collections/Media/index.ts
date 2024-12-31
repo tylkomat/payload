@@ -35,6 +35,7 @@ export const MediaCollection: CollectionConfig = {
       edit: {
         Upload: {
           path: '/components/Upload.tsx',
+          exportName: 'UploadArea',
           clientProps: {},
           serverProps: {},
         },
