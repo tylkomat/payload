@@ -24,6 +24,15 @@ export default buildConfigWithDefaults({
     // ...add more globals here
     MenuGlobal,
   ],
+  queryPresets: {
+    access: {
+      read: () => false,
+      create: () => false,
+      update: () => false,
+      delete: () => false,
+    },
+    constraints: {},
+  },
   onInit: async (payload) => {
     await payload.create({
       collection: 'users',

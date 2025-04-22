@@ -9,6 +9,7 @@ export const PostsCollection: CollectionConfig = {
   admin: {
     useAsTitle: 'title',
   },
+  enableQueryPresets: true,
   fields: [
     {
       name: 'title',
